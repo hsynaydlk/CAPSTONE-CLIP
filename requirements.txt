@@ -1,0 +1,13 @@
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+matplotlib
+pillow
+tqdm
+psutil
+huggingface_hub
+open_clip_torch
+ftfy
+regex
