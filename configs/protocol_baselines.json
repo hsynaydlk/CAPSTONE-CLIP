@@ -1,0 +1,74 @@
+{
+  "source": "train_protocol_baselines.py",
+  "declared_defaults": {
+    "run_tag": "avion_applenet_capstone_protocol_matched_v1",
+    "protocol_version": "capstone_clip_disjoint5fold_validation_free_v11",
+    "support_namespace": "capstone_disjoint5fold_support5_v1",
+    "output_root": "",
+    "local_cache": "/content/capstone_pm_cache",
+    "datasets": [
+      "NWPU_RESISC45",
+      "PatternNet",
+      "AID",
+      "UCMerced",
+      "WHU_RS19",
+      "EuroSAT"
+    ],
+    "expected_counts": {
+      "NWPU_RESISC45": 31500,
+      "PatternNet": 30400,
+      "AID": 10000,
+      "UCMerced": 2100,
+      "WHU_RS19": 1005,
+      "EuroSAT": 27000
+    },
+    "expected_class_counts": {
+      "NWPU_RESISC45": 45,
+      "PatternNet": 38,
+      "AID": 30,
+      "UCMerced": 21,
+      "WHU_RS19": 19,
+      "EuroSAT": 10
+    },
+    "primary_backbone": "openclip_b32",
+    "arch": "ViT-B-32",
+    "pretrained_candidates": [
+      "laion2b_s34b_b79k",
+      "openai"
+    ],
+    "n_outer_folds": 5,
+    "fold_seed": 20260717,
+    "shots": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "support_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "methods": [
+      "AVION-PM",
+      "APPLeNet-PM"
+    ],
+    "avion_epochs": 80,
+    "applenet_epochs": 80,
+    "batch_size": 64,
+    "eval_chunk": 2048,
+    "weight_decay": 0.001,
+    "avion_lr": 0.0002,
+    "applenet_lr": 0.0005,
+    "applenet_anticorr": 0.05,
+    "ece_bins": 15,
+    "require_existing_capstone_cache": true,
+    "require_manifest_match": true,
+    "force_rerun": false,
+    "save_model_checkpoints": false,
+    "run_mode": "paper"
+  }
+}

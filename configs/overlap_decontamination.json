@@ -1,0 +1,279 @@
+{
+  "source": "run_overlap_decontamination.py",
+  "declared_defaults": {
+    "run_tag": "reviewer_revision_final_clean_20261006",
+    "protocol_version": "capstone_reviewer_revision_final_clean_v1",
+    "support_namespace": "capstone_disjoint5fold_support5_v1",
+    "resume_from_run_tag": null,
+    "out_root": "",
+    "local_out": "",
+    "local_data": "/content/data_local",
+    "cache_dirname": "cache_capstone_preproj_v1",
+    "datasets": [
+      "NWPU_RESISC45",
+      "PatternNet",
+      "AID",
+      "UCMerced",
+      "WHU_RS19",
+      "EuroSAT"
+    ],
+    "expected_counts": {
+      "NWPU_RESISC45": 31500,
+      "PatternNet": 30400,
+      "AID": 10000,
+      "UCMerced": 2100,
+      "WHU_RS19": 1005,
+      "EuroSAT": 27000
+    },
+    "expected_class_counts": {
+      "NWPU_RESISC45": 45,
+      "PatternNet": 38,
+      "AID": 30,
+      "UCMerced": 21,
+      "WHU_RS19": 19,
+      "EuroSAT": 10
+    },
+    "strict_dataset_integrity": true,
+    "auto_exclude_exact_duplicates": true,
+    "auto_exclude_filename_artifacts": true,
+    "caption_datasets": [
+      "RSICD",
+      "RSITMD"
+    ],
+    "caption_dataset": "RSICD",
+    "external_caption_dataset": "RSITMD",
+    "require_second_caption_dataset": true,
+    "primary_backbone": "openclip_b32",
+    "backbone_specs": [
+      {
+        "key": "openclip_b32",
+        "label": "OpenCLIP ViT-B/32",
+        "kind": "openclip",
+        "arch": "ViT-B-32",
+        "pretrained_candidates": [
+          "laion2b_s34b_b79k",
+          "openai"
+        ],
+        "cache_tokens": true,
+        "cache_preproj": true
+      },
+      {
+        "key": "remoteclip_b32",
+        "label": "RemoteCLIP ViT-B/32",
+        "kind": "checkpoint",
+        "arch": "ViT-B-32",
+        "hf_repo": "chendelong/RemoteCLIP",
+        "hf_filename": "RemoteCLIP-ViT-B-32.pt",
+        "cache_tokens": true,
+        "cache_preproj": true
+      },
+      {
+        "key": "georsclip_b32",
+        "label": "GeoRSCLIP ViT-B/32",
+        "kind": "checkpoint",
+        "arch": "ViT-B-32",
+        "hf_repo": "Zilun/GeoRSCLIP",
+        "hf_filename": "ckpt/RS5M_ViT-B-32.pt",
+        "cache_tokens": true,
+        "cache_preproj": true
+      },
+      {
+        "key": "openclip_b16",
+        "label": "OpenCLIP ViT-B/16",
+        "kind": "openclip",
+        "arch": "ViT-B-16",
+        "pretrained_candidates": [
+          "laion2b_s34b_b88k",
+          "openai"
+        ],
+        "cache_tokens": false,
+        "cache_preproj": true
+      }
+    ],
+    "n_outer_folds": 5,
+    "fold_seed": 20260717,
+    "split_seed": 20260717,
+    "shots": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "support_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_epochs": 80,
+    "caption_epochs": 60,
+    "sequential_caption_epochs": 40,
+    "sequential_support_epochs": 40,
+    "prolip_epochs": 300,
+    "rla_epochs": 300,
+    "hoso_epochs": 200,
+    "tipf_epochs": 80,
+    "coop_epochs": 80,
+    "taskres_epochs": 100,
+    "batch_size": 64,
+    "caption_batch_size": 64,
+    "caption_steps_per_epoch": 20,
+    "weight_decay": 0.001,
+    "eval_chunk": 8192,
+    "presets": {
+      "CLIP-Adapter": {
+        "lr": 0.002,
+        "res": 0.2
+      },
+      "Tip-Adapter": {
+        "alpha": 1.0,
+        "beta": 5.5
+      },
+      "Tip-Adapter-F": {
+        "alpha": 1.0,
+        "beta": 5.5,
+        "lr": 0.0005
+      },
+      "CoOp": {
+        "lr": 0.005
+      },
+      "TaskRes": {
+        "lr": 0.005,
+        "alpha": 0.5
+      },
+      "RLA": {
+        "lr": 0.001,
+        "lambda_rule": "1/K"
+      },
+      "ProLIP": {
+        "lr": 0.001,
+        "lambda_rule": "1/K"
+      },
+      "HOSO-Adapter": {
+        "adapter_lr": 0.002,
+        "alpha_lr": 0.1,
+        "res": 0.2
+      },
+      "Shared-Caption": {
+        "lr": 0.0002,
+        "lambda_cap": 0.5
+      },
+      "CAPSTONE-CLIP": {
+        "lr": 0.0002,
+        "lambda_cap": 0.5,
+        "lambda_shared_cls": 0.25,
+        "lambda_decor": 0.01,
+        "lambda_cons": 0.05,
+        "lambda_gate": 0.0001,
+        "caption_scale": 1.0,
+        "caption_mode": "joint"
+      }
+    },
+    "caption_scales": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "caption_control_datasets": [
+      "NWPU_RESISC45",
+      "AID",
+      "EuroSAT"
+    ],
+    "caption_control_shots": [
+      1,
+      4,
+      16
+    ],
+    "caption_controls": [
+      "no_caption",
+      "matched_budget",
+      "shuffled_caption",
+      "image_only",
+      "joint_full",
+      "sequential_full"
+    ],
+    "primary_methods": [
+      "Zero-shot",
+      "LinearProbe",
+      "CLIP-Adapter",
+      "Tip-Adapter",
+      "Tip-Adapter-F",
+      "CoOp",
+      "TaskRes",
+      "RLA",
+      "ProLIP",
+      "HOSO-Adapter",
+      "Shared-Caption",
+      "Capacity-Matched-Shared",
+      "CAPSTONE-CLIP"
+    ],
+    "cross_backbone_methods": [
+      "Zero-shot",
+      "RLA",
+      "ProLIP",
+      "Shared-Caption",
+      "CAPSTONE-CLIP"
+    ],
+    "cross_backbone_keys": [
+      "openclip_b32",
+      "remoteclip_b32",
+      "georsclip_b32"
+    ],
+    "cross_backbone_shots": [
+      1,
+      4,
+      16
+    ],
+    "base_to_new_datasets": [
+      "NWPU_RESISC45",
+      "PatternNet",
+      "AID",
+      "EuroSAT"
+    ],
+    "base_to_new_shots": [
+      4,
+      16
+    ],
+    "cross_dataset_source": "NWPU_RESISC45",
+    "cross_dataset_shot": 4,
+    "encode_batch": 384,
+    "encode_workers": 0,
+    "shard_size": 4096,
+    "cache_to_drive": true,
+    "stage_from_zip": true,
+    "gpu_resident": true,
+    "retrieval_max_images": null,
+    "inferential_alpha": 0.05,
+    "bootstrap_repetitions": 10000,
+    "classification_noninferiority_margin": 0.01,
+    "retrieval_noninferiority_margin": 0.01,
+    "ece_bins": 15,
+    "run_primary": true,
+    "run_caption_controls": true,
+    "run_retrieval": true,
+    "run_base_to_new": true,
+    "run_cross_dataset": true,
+    "run_cross_backbone": true,
+    "run_efficiency": true,
+    "run_near_duplicate_audit": true,
+    "run_architecture_ablations": true,
+    "run_class_diagnostics": true,
+    "ablation_datasets": [
+      "NWPU_RESISC45",
+      "AID",
+      "EuroSAT"
+    ],
+    "ablation_shots": [
+      1,
+      4,
+      16
+    ],
+    "diagnostic_shot": 4,
+    "seed": 42,
+    "smoke_per_class": 20,
+    "SMOKE_TEST": false
+  }
+}

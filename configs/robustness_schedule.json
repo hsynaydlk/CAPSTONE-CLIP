@@ -1,0 +1,48 @@
+{
+  "SOFT_BUDGET_HOURS": 4.5,
+  "HARD_BUDGET_HOURS": 4.9,
+  "REV_WIDTHS": [
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "REV_WIDTH_K": [
+    1,
+    4,
+    16
+  ],
+  "REV_WIDTH_SEEDS": [
+    0,
+    1
+  ],
+  "REV_EXPOSURE_K": [
+    1,
+    4,
+    16
+  ],
+  "REV_EXPOSURE_SEEDS": [
+    0,
+    1
+  ],
+  "REV_EXPOSURE_CONTROLS": [
+    "no_caption",
+    "image_only",
+    "shuffled_caption",
+    "joint_full"
+  ],
+  "REV_CAPTION_K": 4,
+  "REV_CAPTION_SEEDS": [
+    0
+  ],
+  "REV_CAPTION_CORPORA": [
+    "RSICD",
+    "RSITMD"
+  ],
+  "REV_AUDIT_THRESHOLDS": [
+    0.99,
+    0.995,
+    0.999
+  ]
+}
