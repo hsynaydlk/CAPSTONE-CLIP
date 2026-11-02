@@ -1,0 +1,3 @@
+method,same_capstone_split,same_shots,same_support_seeds,same_backbone_key,target_validation,official_repository_unchanged,allowed_table_label,not_allowed_label
+AVION-PM,True,True,True,True,False,False,AVION-PM (protocol-matched reimplementation),Official AVION
+APPLeNet-PM,True,True,True,True,False,False,APPLeNet-PM (protocol-matched reimplementation),Official APPLeNet

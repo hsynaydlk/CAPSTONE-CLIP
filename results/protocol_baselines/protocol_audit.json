@@ -1,0 +1,221 @@
+{
+  "protocol": {
+    "protocol_version": "capstone_clip_disjoint5fold_validation_free_v11",
+    "support_namespace": "capstone_disjoint5fold_support5_v1",
+    "fold_seed": 20260717,
+    "n_outer_folds": 5,
+    "shots": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "support_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "datasets": [
+      "NWPU_RESISC45",
+      "PatternNet",
+      "AID",
+      "UCMerced",
+      "WHU_RS19",
+      "EuroSAT"
+    ],
+    "backbone": "openclip_b32",
+    "loaded_pretrained": "laion2b_s34b_b79k",
+    "target_validation": false,
+    "manifest_path": "/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/outputs_q1_capstone_clip_v11_full_external/split_manifest_capstone_disjoint5fold_support5_v1.json",
+    "manifest_verified": true,
+    "implementations": {
+      "AVION-PM": "protocol-matched feature-level reimplementation",
+      "APPLeNet-PM": "protocol-matched token-conditioned reimplementation"
+    }
+  },
+  "audit": [
+    {
+      "dataset": "NWPU_RESISC45",
+      "fold": 0,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "NWPU_RESISC45",
+      "fold": 1,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "NWPU_RESISC45",
+      "fold": 2,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "NWPU_RESISC45",
+      "fold": 3,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "NWPU_RESISC45",
+      "fold": 4,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "PatternNet",
+      "fold": 0,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "PatternNet",
+      "fold": 1,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "PatternNet",
+      "fold": 2,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "PatternNet",
+      "fold": 3,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "PatternNet",
+      "fold": 4,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "AID",
+      "fold": 0,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "AID",
+      "fold": 1,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "AID",
+      "fold": 2,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "AID",
+      "fold": 3,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "AID",
+      "fold": 4,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "UCMerced",
+      "fold": 0,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "UCMerced",
+      "fold": 1,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "UCMerced",
+      "fold": 2,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "UCMerced",
+      "fold": 3,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "UCMerced",
+      "fold": 4,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "WHU_RS19",
+      "fold": 0,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "WHU_RS19",
+      "fold": 1,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "WHU_RS19",
+      "fold": 2,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "WHU_RS19",
+      "fold": 3,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "WHU_RS19",
+      "fold": 4,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "EuroSAT",
+      "fold": 0,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "EuroSAT",
+      "fold": 1,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "EuroSAT",
+      "fold": 2,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "EuroSAT",
+      "fold": 3,
+      "all_match": true,
+      "failed": []
+    },
+    {
+      "dataset": "EuroSAT",
+      "fold": 4,
+      "all_match": true,
+      "failed": []
+    }
+  ]
+}
