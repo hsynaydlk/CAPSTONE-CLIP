@@ -1,0 +1,10 @@
+check,pass
+CAPSTONE raw loaded,True
+PM raw loaded,True
+Combined raw exported,True
+Coverage audit exported,True
+Pairwise inference exported,True
+Paper summary exported,True
+Excel workbook exported,True
+Digest exported,True
+ZIP copied to Drive,True

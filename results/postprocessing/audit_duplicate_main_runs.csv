@@ -1,0 +1,1 @@
+backbone,dataset,K,fold,support_seed,method,Accuracy,MacroF1,BalancedAccuracy,NLL,ECE,N,available,train_eval_s,peak_gpu_delta_mb,trainable_params,selection,lambda,reason,external_images,caption_mode,capacity_ratio_to_capstone,control,caption_scale,support_images,external_to_support_ratio,classes,caption_dataset,alpha,source_notebook

@@ -1,0 +1,16 @@
+source,method,expected_runs,completed_unique_runs,missing_runs,failed_rows,coverage_pct
+CAPSTONE-main,Zero-shot,750,750,0,0,100.0
+CAPSTONE-main,LinearProbe,750,750,0,0,100.0
+CAPSTONE-main,CLIP-Adapter,750,750,0,0,100.0
+CAPSTONE-main,Tip-Adapter,750,750,0,0,100.0
+CAPSTONE-main,Tip-Adapter-F,750,750,0,0,100.0
+CAPSTONE-main,CoOp,750,750,0,0,100.0
+CAPSTONE-main,TaskRes,750,750,0,0,100.0
+CAPSTONE-main,RLA,750,750,0,0,100.0
+CAPSTONE-main,ProLIP,750,750,0,0,100.0
+CAPSTONE-main,HOSO-Adapter,750,600,150,150,80.0
+CAPSTONE-main,Shared-Caption,750,750,0,0,100.0
+CAPSTONE-main,Capacity-Matched-Shared,750,750,0,0,100.0
+CAPSTONE-main,CAPSTONE-CLIP,750,750,0,0,100.0
+PM-external,AVION-PM,750,750,0,0,100.0
+PM-external,APPLeNet-PM,750,750,0,0,100.0

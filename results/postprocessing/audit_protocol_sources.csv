@@ -1,0 +1,4 @@
+check,status,evidence
+CAPSTONE raw exists,PASS,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/outputs_q1_capstone_clip_v11_full_external/tables/raw_primary_classification.csv
+PM split/support manifest matches CAPSTONE,PASS,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/outputs_avion_applenet_capstone_protocol_matched_v1/protocol_audit.json
+PM rows marked directly comparable protocol,PASS,raw_protocol_matched_external.csv
