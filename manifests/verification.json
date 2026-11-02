@@ -1,0 +1,68 @@
+[
+  {
+    "dataset": "NWPU_RESISC45",
+    "images": 31500,
+    "classes": 45,
+    "fold_hashes": 10,
+    "support_hashes": 125,
+    "all_sha256_match": true,
+    "seed_class_repr": "numpy_int",
+    "path_digest_matches_archive": true,
+    "duplicate_path_records": 0
+  },
+  {
+    "dataset": "PatternNet",
+    "images": 30400,
+    "classes": 38,
+    "fold_hashes": 10,
+    "support_hashes": 125,
+    "all_sha256_match": true,
+    "seed_class_repr": "numpy_int",
+    "path_digest_matches_archive": true,
+    "duplicate_path_records": 0
+  },
+  {
+    "dataset": "AID",
+    "images": 10000,
+    "classes": 30,
+    "fold_hashes": 10,
+    "support_hashes": 125,
+    "all_sha256_match": true,
+    "seed_class_repr": "numpy_int",
+    "path_digest_matches_archive": true,
+    "duplicate_path_records": 0
+  },
+  {
+    "dataset": "EuroSAT",
+    "images": 27000,
+    "classes": 10,
+    "fold_hashes": 10,
+    "support_hashes": 125,
+    "all_sha256_match": true,
+    "seed_class_repr": "numpy_int",
+    "path_digest_matches_archive": true,
+    "duplicate_path_records": 0
+  },
+  {
+    "dataset": "WHU_RS19",
+    "images": 1005,
+    "classes": 19,
+    "fold_hashes": 10,
+    "support_hashes": 125,
+    "all_sha256_match": true,
+    "seed_class_repr": "numpy_int",
+    "path_digest_matches_archive": true,
+    "duplicate_path_records": 0
+  },
+  {
+    "dataset": "UCMerced",
+    "images": 2100,
+    "classes": 21,
+    "fold_hashes": 10,
+    "support_hashes": 125,
+    "all_sha256_match": true,
+    "seed_class_repr": "numpy_int",
+    "path_digest_matches_archive": true,
+    "duplicate_path_records": 0
+  }
+]
