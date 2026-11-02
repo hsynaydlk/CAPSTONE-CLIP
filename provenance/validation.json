@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "artifact_hashes_checked": 165,
+  "datasets": [
+    {
+      "dataset": "NWPU_RESISC45",
+      "records": 31500,
+      "support_memberships": 34875,
+      "hashes_match": true
+    },
+    {
+      "dataset": "PatternNet",
+      "records": 30400,
+      "support_memberships": 29450,
+      "hashes_match": true
+    },
+    {
+      "dataset": "AID",
+      "records": 10000,
+      "support_memberships": 23250,
+      "hashes_match": true
+    },
+    {
+      "dataset": "UCMerced",
+      "records": 2100,
+      "support_memberships": 16275,
+      "hashes_match": true
+    },
+    {
+      "dataset": "WHU_RS19",
+      "records": 1005,
+      "support_memberships": 14725,
+      "hashes_match": true
+    },
+    {
+      "dataset": "EuroSAT",
+      "records": 27000,
+      "support_memberships": 7750,
+      "hashes_match": true
+    }
+  ],
+  "tables": [
+    {
+      "path": "results/architecture_ablations/raw_architecture_ablations.csv",
+      "rows": 900,
+      "required_metrics_complete": true
+    },
+    {
+      "path": "results/all_six_exposure/all6_exposure_controls_raw.csv",
+      "rows": 720,
+      "required_metrics_complete": true
+    },
+    {
+      "path": "results/five_width_sweep/adapter_width_sweep_raw.csv",
+      "rows": 900,
+      "required_metrics_complete": true
+    },
+    {
+      "path": "results/second_caption_corpus/caption_corpus_robustness_raw.csv",
+      "rows": 60,
+      "required_metrics_complete": true
+    },
+    {
+      "path": "results/aid_decontamination/aid_decontaminated_rsicd_raw.csv",
+      "rows": 30,
+      "required_metrics_complete": true
+    }
+  ],
+  "training_rerun": false,
+  "known_duplicate_content_risk": "docs/data_integrity.md"
+}
