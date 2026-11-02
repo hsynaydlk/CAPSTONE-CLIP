@@ -1,0 +1,33 @@
+{
+  "friedman": {
+    "n_runs": 9000,
+    "n_methods": 12,
+    "n_dataset_blocks": 6,
+    "statistic": 63.25641025641022,
+    "df": 11,
+    "p_asymptotic": 2.2894424256161696e-09,
+    "permutation_draws": 200000,
+    "permutation_hits": 0,
+    "permutation_p_plus_one": 4.9999750001249995e-06,
+    "permutation_seed": 20261029,
+    "old_30_cell_statistic": 289.56923076923067,
+    "old_30_cell_p": 1.3767309883031007e-55,
+    "label": "exploratory sensitivity; permutation assumes within-dataset method exchangeability; six datasets limit generalization"
+  },
+  "width": {
+    "n_runs": 900,
+    "mean512_minus128_pp": 0.07443934139753376,
+    "dataset_bootstrap_95_low_pp": -0.15898039852718085,
+    "dataset_bootstrap_95_high_pp": 0.3488693957115017,
+    "exact_sign_flip_p": 0.65625,
+    "n_datasets": 6,
+    "seed": 20261005,
+    "bootstrap_B": 20000,
+    "equivalence_established": false,
+    "initialization_note": "support seed labels matched, but initialization RNG namespace differs by width; 128/256 reused from primary, 32/64/512 revision runs"
+  },
+  "source_hashes": {
+    "primary": "ac3384060bad47073615c08306e28a74dd1a60a11448a31acbe09588a416127e",
+    "width": "8a4e2dc14ce37e747650e639cafe01b62f85cc7e9cbb2e1b396c83b004f14735"
+  }
+}
