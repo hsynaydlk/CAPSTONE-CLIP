@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "paired_runs": 10,
+  "folds": 5,
+  "K": 4,
+  "support_seed": 0,
+  "human_review_completed": false,
+  "policy": "all_candidates_conservative",
+  "time": 1793221502.3116996
+}

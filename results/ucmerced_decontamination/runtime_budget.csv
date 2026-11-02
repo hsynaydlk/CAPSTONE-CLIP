@@ -1,0 +1,11 @@
+fold,condition,hardware,epochs,steps_per_epoch,optimizer_steps,caption_pairs_drawn,train_s_cumulative,train_s_this_session,eval_s,resumed,timing_scope
+0,original,NVIDIA L4,60,20,1200,76800,24.197457679999843,24.250558461999844,0.04620775500006857,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+0,decontaminated,NVIDIA L4,60,20,1200,76800,23.806441994000124,23.859009500999946,0.00968154800011689,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+1,original,NVIDIA L4,60,20,1200,76800,23.798242387999835,23.85079948700013,0.010416598000119848,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+1,decontaminated,NVIDIA L4,60,20,1200,76800,23.749602390999826,23.80152349800028,0.009890652000194677,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+2,original,NVIDIA L4,60,20,1200,76800,24.047787700999834,24.101148922999982,0.010418383999876824,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+2,decontaminated,NVIDIA L4,60,20,1200,76800,24.002690000000257,24.057198209000035,0.009643112000048859,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+3,original,NVIDIA L4,60,20,1200,76800,24.022854219999772,24.076518017000126,0.009573668000030011,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+3,decontaminated,NVIDIA L4,60,20,1200,76800,24.049567561999993,24.10843525500013,0.010505878000003577,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+4,original,NVIDIA L4,60,20,1200,76800,24.15268448100005,24.222828273000232,0.009781141000075877,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
+4,decontaminated,NVIDIA L4,60,20,1200,76800,24.345384315000047,24.40242179500001,0.01065535199995793,False,cached-feature adaptation; excludes staging/encoding/audit; checkpoint IO included
