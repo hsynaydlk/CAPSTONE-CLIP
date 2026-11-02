@@ -1,0 +1,9 @@
+{
+  "complete": true,
+  "fingerprint": "fc22782de732622d3bf01742c0a1a6070e6d71aa152437963dabba63c58f78e6",
+  "queries": 3858,
+  "targets": 2100,
+  "pairs": 8101800,
+  "candidates": 52,
+  "top_k_truncation": false
+}

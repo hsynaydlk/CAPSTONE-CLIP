@@ -1,0 +1,13 @@
+caption_dataset,target_dataset,n_caption_train_images,n_target_images,annotation_source,feature_search_exhaustive,max_similarity,n_ge_0.990,frac_ge_0.990,n_ge_0.995,frac_ge_0.995,n_ge_0.999,frac_ge_0.999
+RSICD,NWPU_RESISC45,8734,31500,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD/dataset_rsicd.json,True,0.9321680068969728,0,0.0,0,0.0,0,0.0
+RSICD,PatternNet,8734,30400,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD/dataset_rsicd.json,True,0.9473164081573486,0,0.0,0,0.0,0,0.0
+RSICD,AID,8734,10000,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD/dataset_rsicd.json,True,0.9902081489562988,2,0.0002289901603944,0,0.0,0,0.0
+RSICD,UCMerced,8734,2100,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD/dataset_rsicd.json,True,0.946901559829712,0,0.0,0,0.0,0,0.0
+RSICD,WHU_RS19,8734,1005,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD/dataset_rsicd.json,True,0.9869372248649596,0,0.0,0,0.0,0,0.0
+RSICD,EuroSAT,8734,27000,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD/dataset_rsicd.json,True,0.9025610685348512,0,0.0,0,0.0,0,0.0
+RSITMD,NWPU_RESISC45,3858,31500,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSITMD/dataset_rsitmd.json,True,0.9219930171966552,0,0.0,0,0.0,0,0.0
+RSITMD,PatternNet,3858,30400,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSITMD/dataset_rsitmd.json,True,0.9435782432556152,0,0.0,0,0.0,0,0.0
+RSITMD,AID,3858,10000,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSITMD/dataset_rsitmd.json,True,0.986381769180298,0,0.0,0,0.0,0,0.0
+RSITMD,UCMerced,3858,2100,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSITMD/dataset_rsitmd.json,True,0.9957408905029296,2,0.000518403307069,1,0.0002592016535345,0,0.0
+RSITMD,WHU_RS19,3858,1005,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSITMD/dataset_rsitmd.json,True,0.9829253554344176,0,0.0,0,0.0,0,0.0
+RSITMD,EuroSAT,3858,27000,/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSITMD/dataset_rsitmd.json,True,0.878564715385437,0,0.0,0,0.0,0,0.0
