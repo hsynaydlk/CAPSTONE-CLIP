@@ -1,0 +1,4 @@
+comparison,mean_delta_pp,dataset_boot_ci_low_pp,dataset_boot_ci_high_pp,exact_sign_flip_p,n_datasets
+joint_full_minus_image_only,1.755508691227793,0.660767555982274,3.25933585172162,0.03125,6
+joint_full_minus_shuffled_caption,2.6584402060868944,1.2088053550704647,4.470673188291325,0.03125,6
+joint_full_minus_no_caption,2.1236007335687646,1.2033343389337545,3.487168719892599,0.03125,6
