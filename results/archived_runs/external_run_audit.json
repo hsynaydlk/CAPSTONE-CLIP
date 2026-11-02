@@ -1,0 +1,107 @@
+{
+  "run_profile": "paper_full",
+  "external_mode": "all",
+  "avion_commit": "f854e35436d6f030cd73ced737eecbc675b7fedc",
+  "applenet_commit": "42bc4654311da9773b59979dc71fe9f60534ab84",
+  "setup_errors": {},
+  "environment_audit": {
+    "avion": {
+      "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "cuda": true,
+      "device": "NVIDIA L4"
+    },
+    "applenet": {
+      "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+      "torch": "2.11.0+cu128",
+      "torchvision": "0.26.0+cu128",
+      "cuda": true,
+      "device": "NVIDIA L4"
+    }
+  },
+  "avion_ready": false,
+  "avion_gpu_ready": true,
+  "avion_training_ready": false,
+  "avion_readiness": {
+    "returncode": 0,
+    "ready": false,
+    "official_ready_field": false,
+    "present": 0,
+    "missing": 342,
+    "total": 342,
+    "missing_truncated": true,
+    "report_path": "/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/external_official_baselines/avion_output_core/readiness_report.json"
+  },
+  "avion_job_status": {
+    "blocked_not_ready": 1
+  },
+  "applenet_ready": true,
+  "applenet_gpu_report": {
+    "cuda": true,
+    "device": "NVIDIA L4"
+  },
+  "applenet_data_report": [
+    {
+      "dataset": "patternnet",
+      "source": "/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/PatternNet",
+      "prepared_root": "/content/applenet_official_data/patternnet",
+      "source_exists": true,
+      "json_files": [
+        "/content/applenet_official_data/patternnet/patternnet.json",
+        "/content/applenet_official_data/patternnet/patternnetv2.json"
+      ]
+    },
+    {
+      "dataset": "rsicd",
+      "source": "/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/RSICD",
+      "prepared_root": "/content/applenet_official_data/rsicd",
+      "source_exists": true,
+      "json_files": [
+        "/content/applenet_official_data/rsicd/rsicd.json",
+        "/content/applenet_official_data/rsicd/rsicdv2.json"
+      ]
+    },
+    {
+      "dataset": "resisc45",
+      "source": "/content/drive/MyDrive/CAPSTONE_CLIP_RemoteSensing/data/NWPU_RESISC45",
+      "prepared_root": "/content/applenet_official_data/resisc45",
+      "source_exists": true,
+      "json_files": [
+        "/content/applenet_official_data/resisc45/resisc45.json",
+        "/content/applenet_official_data/resisc45/resisc45v2.json"
+      ]
+    }
+  ],
+  "applenet_job_status": {
+    "failed": 9
+  },
+  "core_datasets": [
+    "aid",
+    "resisc45",
+    "eurosat"
+  ],
+  "core_shots": [
+    1,
+    4,
+    16
+  ],
+  "core_seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "applenet_datasets": [
+    "patternnet",
+    "rsicd",
+    "resisc45"
+  ],
+  "applenet_seeds": [
+    1,
+    2,
+    3
+  ],
+  "note": "AVION and APPLeNet are official isolated runs. Their results are not merged into the locked CAPSTONE table unless protocols are identical."
+}

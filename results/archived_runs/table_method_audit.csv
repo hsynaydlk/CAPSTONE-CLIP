@@ -1,0 +1,18 @@
+method,execution_group,included,runner_implemented,uses_external_caption_data,target_validation,directly_comparable,notes
+Zero-shot,internal_primary,True,True,False,False,True,support-only/frozen baseline
+LinearProbe,internal_primary,True,True,False,False,True,support-only/frozen baseline
+CLIP-Adapter,internal_primary,True,True,False,False,True,support-only/frozen baseline
+Tip-Adapter,internal_primary,True,True,False,False,True,support-only/frozen baseline
+Tip-Adapter-F,internal_primary,True,True,False,False,True,support-only/frozen baseline
+CoOp,internal_primary,True,True,False,False,True,support-only/frozen baseline
+TaskRes,internal_primary,True,True,False,False,True,support-only/frozen baseline
+RLA,internal_primary,True,True,False,False,True,support-only/frozen baseline
+ProLIP,internal_primary,True,True,False,False,True,support-only/frozen baseline
+HOSO-Adapter,internal_primary,True,True,False,False,True,support-only/frozen baseline
+Shared-Caption,internal_primary,True,True,True,False,True,external caption budget exported
+Capacity-Matched-Shared,internal_primary,True,True,True,False,True,external caption budget exported
+CAPSTONE-CLIP,internal_primary,True,True,True,False,True,external caption budget exported
+AVION,external_official,False,True,True,official protocol,False,official repository; isolated external run
+APPLeNet,external_official,False,True,False,official protocol,False,official repository; isolated external run
+MaPLe,external_official,False,False,False,official protocol,False,registered only; runner not implemented
+CLIP-LoRA,external_official,False,False,False,official protocol,False,registered only; runner not implemented

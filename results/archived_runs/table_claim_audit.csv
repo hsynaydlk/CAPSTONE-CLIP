@@ -1,0 +1,8 @@
+claim,status,evidence
+Validation-free target protocol,PASS,No target val function; disjoint outer folds.
+Pure few-shot,DO NOT CLAIM,Main model uses external image-caption pairs.
+Caption grounding causes gains,CONDITIONAL,"Requires matched-budget, shuffled-caption and image-only controls."
+Explainable attention,REMOVED,No explainability mechanism in main architecture.
+Retrieval SOTA,DO NOT CLAIM,Requires same-backbone official protocol comparison.
+Train-test near-duplicate leakage,AUDITED,Feature-space sample audit exported; inspect threshold table and top pairs.
+Inductive unseen benchmark,UNVERIFIED,RemoteCLIP/GeoRSCLIP pretraining overlap may exist.
